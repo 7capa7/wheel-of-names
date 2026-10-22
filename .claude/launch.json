@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wheel",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /private/tmp/claude-502/-Users-patrykcapanda-Desktop-wheel-of-kozior/f776199a-8823-4e47-922e-ac34ee2af256/scratchpad/site && exec python3 -m http.server ${PORT:-4567}"],
+      "port": 4567
+    }
+  ]
+}

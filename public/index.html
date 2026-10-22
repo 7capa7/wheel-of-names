@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wheel of Names</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="favicon.svg" alt="">
+      <span>Wheel of Names</span>
+    </div>
+    <nav class="menu">
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>Customize</button>
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/></svg>New</button>
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>Open</button>
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>Save</button>
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>Share</button>
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>Gallery</button>
+      <button class="menu-item" aria-label="Fullscreen"><svg class="i" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg></button>
+      <button class="menu-item">More<svg class="i" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+      <button class="menu-item"><svg class="i" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>English</button>
+    </nav>
+    <button class="hamburger" aria-label="Menu"><svg class="i" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+  </header>
+
+  <main class="layout">
+    <section class="stage">
+      <div class="stage-tools">
+        <button class="round-btn" aria-label="Edit"><svg class="i" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></button>
+        <div class="ad-links">
+          <button>Report bad ad <svg class="i" viewBox="0 0 24 24"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg></button>
+          <button>Close ads <svg class="i" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></svg></button>
+        </div>
+      </div>
+
+      <div class="wheel-wrap" id="wheelWrap">
+        <canvas id="wheel" aria-label="Wheel"></canvas>
+        <svg class="spin-hint" id="spinHint" viewBox="-100 -100 200 200" aria-hidden="true">
+          <defs>
+            <path id="arcTop" d="M -57.12 -20.79 A 60.8 60.8 0 0 1 57.12 -20.79"/>
+            <path id="arcBottom" d="M -69.05 18.5 A 71.5 71.5 0 0 0 69.05 18.5"/>
+            <filter id="hintShadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="0.6" stdDeviation="1.3" flood-color="#000" flood-opacity="0.6"/>
+            </filter>
+          </defs>
+          <g filter="url(#hintShadow)">
+            <text font-size="15"><textPath href="#arcTop" startOffset="50%" text-anchor="middle" id="hintTop">Click to spin</textPath></text>
+            <text font-size="14" id="hintBottomText"><textPath href="#arcBottom" startOffset="50%" text-anchor="middle">or press ctrl+enter</textPath></text>
+          </g>
+        </svg>
+        <svg class="pointer" viewBox="0 0 60 56" aria-hidden="true">
+          <g id="pointerFill" fill="#8EDBAA">
+            <polygon points="2,28 58,3 47,28"/>
+            <polygon points="2,28 47,28 58,53"/>
+          </g>
+          <polygon points="2,28 58,3 47,28" fill="#fff" fill-opacity="0.18"/>
+          <polygon points="2,28 47,28 58,53" fill="#000" fill-opacity="0.18"/>
+        </svg>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <button class="collapse-btn" aria-label="Hide"><svg class="i" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+      <div class="card">
+        <div class="tabs">
+          <button class="tab active">Entries <span class="badge" id="entriesCount">0</span></button>
+          <button class="tab">Results <span class="badge" id="resultsCount">0</span></button>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <button class="btn"><svg class="i" viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>Shuffle</button>
+            <button class="btn"><svg class="i" viewBox="0 0 24 24"><path d="M14.94 4.66h-4.72l2.36-2.36zm-4.69 14.71h4.66l-2.33 2.33zM6.1 6.27L1.6 17.73h1.84l.92-2.45h5.11l.92 2.45h1.84L7.74 6.27H6.1zm-1.13 7.37l1.94-5.18 1.94 5.18H4.97zm10.76 2.5h6.12v1.59h-8.53v-1.29l5.92-8.56h-5.88v-1.6h8.3v1.26l-5.93 8.6z"/></svg>Sort</button>
+            <button class="btn"><svg class="i" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>Add image<svg class="i" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+            <label class="check"><input type="checkbox" onclick="return false"> Advanced</label>
+          </div>
+          <textarea id="entries" spellcheck="false" autocomplete="off" aria-label="Entries"></textarea>
+          <div class="add-wheel">
+            <button class="btn btn-lg"><svg class="i" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>Add wheel</button>
+            <button class="btn btn-lg caret" aria-label="More"><svg class="i" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span>Version 438 <span class="pill">New!</span></span>
+          <span class="link">Changelog</span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <div class="backdrop" id="backdrop" hidden>
+    <canvas id="confetti"></canvas>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+      <div class="dialog-head" id="dialogHead"><h2 id="dialogTitle">We have a winner!</h2></div>
+      <div class="dialog-body" id="winnerName"></div>
+      <div class="dialog-actions">
+        <button class="text-btn" id="closeBtn">Close</button>
+        <button class="primary-btn" id="removeBtn">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
